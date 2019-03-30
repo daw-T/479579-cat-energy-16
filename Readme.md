@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Galina Pustovalova](https://up.htmlacademy.ru/adaptive/16/user/479579).
-* Наставник: [Александр Бабченко] (https://htmlacademy.ru/profile/babtshe)
+* Наставник: [Александр Бабченко] (https://up.htmlacademy.ru/adaptive/16/user/619357)
 
 ---
 
