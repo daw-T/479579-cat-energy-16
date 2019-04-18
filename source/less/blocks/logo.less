@@ -1,3 +1,46 @@
-.logo {
-  min-height: 65px;
+.logo__image-m {
+  width: 191px;
+  height: 39px;
+}
+
+.logo__image-t {
+  display: none;
+}
+
+.logo__image-d {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo__image-m {
+    display: none;
+  }
+
+  .logo__image-t {
+    display: block;
+    width: 174px;
+    height: 59px;
+
+    margin-right: 95px;
+  }
+
+  .logo__image-d {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__image-m {
+    display: none;
+  }
+
+  .logo__image-t {
+    display: none;
+  }
+
+  .logo__image-d {
+    display: block;
+    width: 203px;
+    height: auto;
+  }
 }

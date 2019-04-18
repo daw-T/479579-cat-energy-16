@@ -1,4 +1,10 @@
 .program-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
   background-image: linear-gradient(#63a73a 305px, #ffff 305px);
   background-repeat: no-repeat;
   min-height: 504px;
@@ -20,13 +26,11 @@
   .p-reset();
   font-size: 14px;
   line-height: 14px;
-  margin-bottom: 300px;
   color: @color-white;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .program-selection__button {
-display: flex;
-  justify-content: center;
+  width: 250px;
 }
