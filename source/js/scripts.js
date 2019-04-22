@@ -1,5 +1,16 @@
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
+
+var button = navToggle;
+if (button.classList.contains('main-nav--opened')) {
+  button.classList.remove('main-nav--opened');
+  button.classList.add('main-nav--closed');
+}
+if (navMain.classList.contains('main-nav--opened')) {
+  navMain.classList.remove('main-nav--opened');
+  navMain.classList.add('main-nav--closed');
+}
+
 console.log("test");
 navToggle.addEventListener('click', function() {
   var button  = this;
