@@ -1,4 +1,17 @@
+a[href].logo {
+  &:hover,
+  &:focus{
+    display: block;
+    opacity: 0.8;
+  }
+
+    &:active {
+    opacity: 0.6;
+  }
+}
+
 .logo__image-m {
+  display: block;
   width: 191px;
   height: 39px;
 }
@@ -9,6 +22,19 @@
 
 .logo__image-d {
   display: none;
+}
+
+.logo-footer__image {
+  &:hover,
+  &:focus{
+    display: block;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
 }
 
 @media (min-width: @tablet-width) {

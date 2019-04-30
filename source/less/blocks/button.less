@@ -1,7 +1,9 @@
-.button {
+.button,
+a.button {
   .oswald-regular();
+  display: block;
   max-width: 280px;
-  padding: 13px 15px 10px 15px;
+  padding: 12px 15px 10px 15px;
   font-size: 14px;
   line-height: 18px;
   color: @color-white;
@@ -9,15 +11,30 @@
   border: none;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    background-color: @bg-greenhvr;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:active,
+  &:active {
+    color: @color-litewhite;
+    outline: none;
+    cursor: pointer;
+  }
 }
 
-.button:hover,
-.button:focus {
-  background-color: @bg-greenhvr;
-  outline: none;
-}
 
-.button:active {
-  color: @color-litewhite;
-  outline: none;
+@media (min-width: @tablet-width) {
+  .button,
+  a.button {
+    padding: 15px 23px 15px 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

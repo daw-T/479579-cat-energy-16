@@ -1,5 +1,13 @@
 .main-map {
   background: @bg-white url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
   background-size: 320px auto;
-  min-height: 400px;
+  min-height: 365px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-map {
+    background: @bg-white url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
+    background-size: 768px auto;
+    min-height: 395px;
+  }
 }

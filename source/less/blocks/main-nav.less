@@ -15,6 +15,7 @@
   cursor: pointer;
   width: 35px;
   height: 30px;
+  padding: 0;
 }
 
 .main-nav.main-nav--closed {
@@ -44,15 +45,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__wrapper{
+  .main-nav__wrapper {
     display: block;
     width: 270px;
     margin: 0;
     padding: 0;
   }
+
+  .main-nav.main-nav--closed {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__list{
+  .main-nav__list {
   }
 }

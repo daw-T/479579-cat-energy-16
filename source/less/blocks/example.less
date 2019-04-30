@@ -1,8 +1,8 @@
-.example__wrapper {
+.example {
   background-color: @bg-lightgray;
   margin-bottom: 10px;
-  padding: 30px 20px;
-  min-height: 665px; /*временно*/
+  padding: 10px 20px;
+  min-height: 678px; /*временно*/
 }
 
 .example__title {
@@ -11,6 +11,11 @@
   font-size: 36px;
   line-height: 60px;
   color: @color-black;
+  margin-bottom: 25px;
+}
+.example__discription {
+  padding-right: 10px;
+  margin-bottom: 25px;
 }
 
 .example__list {
@@ -31,7 +36,7 @@
   color: @color-black;
   width: 124px;
   text-align: center;
-  padding-top: 16px;
+  padding-top: 14px;
   padding-bottom: 16px;
   border: 1px solid #cdcdcd;
   text-transform: uppercase;
@@ -52,10 +57,84 @@
 
 .example__priсe {
   .oswald-regular();
-  margin-top: 20px;
-  margin-bottom: 44px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.example__slider {
+  min-height: 315px; /*временно*/
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: transparent;
+    padding: 0 30px;
+    min-height: 665px; /*временно*/
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 13px;
+    margin-bottom: 65px;
+  }
+
+  .example__discription {
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    margin-bottom: 53px;
+  }
+
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin-bottom: 50px;
+}
+
+  .example__list {
+    width: 366px;
+  }
+
+  .example__options {
+    width: 160px;
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+  }
+
+  .example__options-description {
+    font-size: 14px;
+    line-height: 14px;
+    width: 130px;
+    margin-top: -20px;
+    padding: 8px;
+    background-color: @bg-white;
+  }
+
+  .example__priсe {
+    width: 180px;
+    margin: 0;
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  .example__slider {
+    min-height: 655px;
+    margin-right: -30px;
+    margin-left: -30px;
+    background-image: linear-gradient(#ffffff 190px, transparent 190px);
+    background-image: linear-gradient(to right, #f2f2f2 384px, #eaeaea 384px);
+    background-position: 0 190px;
+    background-repeat: no-repeat;
+  }
 }
