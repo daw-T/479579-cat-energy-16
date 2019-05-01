@@ -1,6 +1,4 @@
 .form {
-  display: flex;
-  flex-direction: column;
   width: 320px;
   margin: 0 auto;
 }
@@ -12,15 +10,117 @@
   line-height: 60px;
   color: @color-black;
   padding: 17px 20px 0 20px;
-  margin: 0;
 }
 
 .form__title-description {
   .oswald-regular();
   .p-reset();
   color: @color-black;
-  padding: 23px 20px 40px 20px;
-  margin: 0;
+  padding: 25px 20px 40px 17px;
   width: 230px;
   text-transform: uppercase;
 }
+
+.form__basic fieldset {
+  margin: 0 auto;
+
+}
+.form__basic label {
+    .oswald-regular();
+    font-size: 16px;
+    line-height: 18px;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+.form__cat-data div {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__basic input[type="text"],
+.form__basic input[type="tel"],
+.form__basic input[type="email"] {
+  min-width: 50px;
+  margin-bottom: 14px;
+  padding: 12px;
+  padding-bottom: 13px;
+  border: 1px solid #cdcdcd;
+  flex-grow: 1;
+}
+
+.form__cat-data {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0;
+
+  & label {
+    margin-right: 16px;
+    margin-top: 10px;
+  }
+}
+
+.form__program-selection {
+  padding: 28px 20px;
+  padding-bottom: 0;
+  border: 0;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+
+  & label {
+    display: block;
+    margin-bottom: 25px;
+    padding-left: 45px;
+    position: relative;
+  }
+
+  & label::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: 2px;
+    width: 11px;
+    height: 11px;
+    background-color: @bg-white;
+    border: 8px solid white;
+    box-shadow: 0 0 0 1px #ededed;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  & input:checked + label::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: 2px;
+    width: 11px;
+    height: 11px;
+    background-color: @bg-green;
+    border: 8px solid white;
+    box-shadow: 0 0 0 1px #ededed;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  & input {
+    display: none;
+  }
+}
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  border: 0;
+}
+
+.form__contacts-title {
+  display: block;
+  .oswald-regular();
+  .p-reset();
+  width: 185px;
+  font-size: 24px;
+  line-height: 24px;
+  color: @color-black;
+}
+
