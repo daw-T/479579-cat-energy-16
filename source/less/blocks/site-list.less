@@ -22,7 +22,7 @@
 
 .site-list a[href] {
   &:hover {
-    color: rgba(17,17,17,0.6);
+    color: rgba(17, 17, 17, 0.6);
   }
 
   &:active::after {
@@ -52,9 +52,11 @@
     &:last-child {
       margin-right: 0;
     }
+
     &--active {
       position: relative;
     }
+
     &--active::after {
       content: "";
       position: absolute;
@@ -62,7 +64,7 @@
       bottom: 6px;
       left: 0;
       height: 2px;
-      background-color: #68b738;;
+      background-color: #68b738;
     }
   }
 
@@ -84,7 +86,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     background-color: @bg-green;
-      }
+  }
 
   .site-list__item {
     margin: 0;
@@ -93,9 +95,11 @@
     &:first-child {
       margin-left: 0;
     }
+
     &--active {
       position: relative;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -104,7 +108,7 @@
       left: 0;
       height: 2px;
       background-color: @bg-white;
-  }
+    }
   }
 
   .site-list__item a {
