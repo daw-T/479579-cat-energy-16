@@ -1,0 +1,49 @@
+.info-dealer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 25px;
+}
+
+.info-dealer__appeal {
+  .oswald-regular();
+  width: 125px;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.info-dealer__address {
+  margin: 0;
+  padding: 0;
+  width: 135px;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .info-dealer__appeal {
+    .oswald-regular();
+    width: 170px;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 35px 50px 35px 50px;
+  }
+
+  .info-dealer__address {
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    margin-right: 55px;
+
+    & span {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}

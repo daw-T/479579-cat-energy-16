@@ -1,0 +1,150 @@
+.advantages {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.advantages__title {
+  .oswald-regular();
+  .p-reset();
+  font-size: 36px;
+  line-height: 60px;
+  color: @color-black;
+  margin: 0 15px 30px 0;
+  //padding: 0;
+}
+
+.advantages__list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.advantages__item {
+  position: relative;
+  min-height: 60px;
+  padding: 0 0 20px 80px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @bg-green;
+  }
+
+  &--useful {
+    position: relative;
+  }
+
+  &--useful::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--material::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--simply::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--quickly::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 18px 0 73px 0;
+  }
+
+  .advantages__list {
+    .list-reset();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    position: relative;
+    width: 254px;
+    padding: 112px 100px 0 0;
+    margin-right: 30px;
+    margin-bottom: 133px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+      width: 245px;
+      padding: 112px 79px 0 0;
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--useful::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--material::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--simply::after {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--quickly::after {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
