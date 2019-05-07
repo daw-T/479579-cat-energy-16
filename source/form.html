@@ -37,7 +37,7 @@
   </nav>
 </header>
 <main class="form">
-  <section class="">
+  <section>
     <h1 class="form__title">Подбор программы</h1>
     <p class="form__title-description">
       Заполните анкету и мы подберем программу питания для вашего кота
@@ -72,46 +72,47 @@
         </div>
       </fieldset>
       <fieldset class="form__contacts">
-
-        <legend class="form__contacts-title">Контактные данные (владельца кота)</legend>
-
+        <h3 class="form__contacts-title">Контактные данные (владельца&nbsp;кота)</h3>
         <div>
           <label for="form__mail">E-mail:*</label>
           <input id="form__mail" type="email" name="mail" required placeholder="kuklachev@gmail.com">
         </div>
         <div>
           <label for="form__phone">Телефон:*</label>
-          <input id="form__phone" type="tel" name="phone" required placeholder="8(960)90-60-90">
+          <input id="form__phone" type="tel" name="phone" required placeholder="8 (960) 900-60-90">
         </div>
       </fieldset>
 
       <fieldset class="form__comment">
-        <legend class="form__comment-title">Комментарий</legend>
+        <h3 class="form__comment-title">Комментарий</h3>
         <div>
-          <label class="visually-hidden" for="form__about">Вопрос от пользователя</label>
-          <textarea id="form__about" name="about" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <label class="visually-hidden" for="form__about">Текст комментария</label>
+          <textarea class="form__comment-discription" id="form__about" name="about" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__additionally">
-        <legend>Дополнительно:</legend>
+        <h3 class="form__additionally-title">Дополнительно:</h3>
         <div>
-          <label for="form__additionally-sweetener">сахарозаменитель</label>
           <input type="checkbox" name="add-products" value="sweetener" id="form__additionally-sweetener" checked>
+          <label for="form__additionally-sweetener">сахарозаменитель</label>
         </div>
         <div>
-          <label for="form__additionally-water">питьевая вода</label>
+
           <input type="checkbox" name="add-products" value="water" id="form__additionally-water">
+          <label for="form__additionally-water">питьевая вода</label>
         </div>
         <div>
-          <label for="form__additionally-milk">молоко</label>
           <input type="checkbox" name="add-products" value="milk" id="form__additionally-milk">
+          <label for="form__additionally-milk">молоко</label>
         </div>
         <div>
-          <label for="form__additionally-vitamins">витамины</label>
           <input type="checkbox" name="add-products" value="vitamins" id="form__additionally-vitamins">
+          <label for="form__additionally-vitamins">витамины</label>
         </div>
       </fieldset>
+      <button class="button form-button" type="submit">Отправить</button>
     </form>
+    <p class="form-note">* — Обязательные поля</p>
   </section>
   <div class="catalog__info-dealer">
     <div class="catalog-infodealer__wrapper">
