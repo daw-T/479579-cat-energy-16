@@ -1,4 +1,12 @@
-a[href].logo {
+.logo picture {
+  .p-reset()
+}
+
+a .logo {
+  display: block;
+}
+
+a .logo {
   &:hover,
   &:focus {
     display: block;
@@ -10,18 +18,10 @@ a[href].logo {
   }
 }
 
-.logo__image-m {
+.logo__image {
   display: block;
   width: 191px;
   height: 39px;
-}
-
-.logo__image-t {
-  display: none;
-}
-
-.logo__image-d {
-  display: none;
 }
 
 .logo-footer__image {
@@ -37,34 +37,15 @@ a[href].logo {
 }
 
 @media (min-width: @tablet-width) {
-  .logo__image-m {
-    display: none;
-  }
-
-  .logo__image-t {
-    display: block;
+  .logo__image {
     width: 174px;
     height: 59px;
-
     margin-right: 95px;
-  }
-
-  .logo__image-d {
-    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .logo__image-m {
-    display: none;
-  }
-
-  .logo__image-t {
-    display: none;
-  }
-
-  .logo__image-d {
-    display: block;
+  .logo__image {
     width: 203px;
     height: auto;
   }

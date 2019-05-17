@@ -85,7 +85,7 @@
     &::before { /*стрелка*/
       position: absolute;
       content: "";
-      top: 2px;
+      top: 4px;
       right: -48px;
       width: 25px;
       height: 12px;
@@ -101,7 +101,7 @@
   .catalog-section__button--description::before { /*стрелка*/
     position: absolute;
     content: "";
-    top: 2px;
+    top: 4px;
     right: -57px;
     width: 34px;
     height: 12px;
@@ -170,5 +170,63 @@
     & .catalog-section__button--description {
       margin: 0;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-section__list {
+    .list-reset();
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    padding: 0 110px;
+  }
+
+  .catalog-section__item {
+    //background-color: transparent; /*временно*/
+    margin: 0;
+    padding: 75px 0 32px 47px;
+    width: 523px;
+
+    &::before {
+      top: 46px;
+      left: 52px;
+      right: unset;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: 41px;
+      left: 65px;
+      right: unset;
+      width: 71px;
+      height: 97px;
+    }
+
+    &--pro::after {
+      top: 69px;
+      left: 34px;
+      right: unset;
+      width: 134px;
+      height: 57px;
+    }
+  }
+
+  .catalog-section__item-title {
+    margin-left: 166px;
+    margin-bottom: 75px;
+  }
+
+  .catalog-section__item-description {
+    width: 465px;
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  .catalog-section__button {
+    padding: 30px 0 20px 5px;
   }
 }

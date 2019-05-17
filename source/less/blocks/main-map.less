@@ -1,4 +1,5 @@
 .main-map {
+  order: 2;
   background: @bg-white url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
   background-size: 320px auto;
   min-height: 365px;
@@ -8,6 +9,16 @@
   .main-map {
     background: @bg-white url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
     background-size: 768px auto;
-    min-height: 395px;
+    min-height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-map {
+    //background: @bg-white url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
+    background: transparent;
+    background-size: 1440px auto;
+    min-height: 400px;
+    order: 1;
   }
 }
