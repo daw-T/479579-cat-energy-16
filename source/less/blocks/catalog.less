@@ -159,16 +159,12 @@
 }
 
 .catalog__info-dealer {
-  background-color: @bg-lightgray;
+  //background-color: @bg-lightgray;
 }
 
-.catalog-infodealer__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 20px;
-  padding-bottom: 25px;
-}
+
+
+
 
 
 @media (min-width: @tablet-width) {
@@ -198,8 +194,10 @@
   .catalog-main__item {
     width: 324px;
     margin-right: 60px;
-    margin-bottom: 98px;
-    background-image: linear-gradient(#ffffff 80px, #f2f2f2 80px);
+    margin-bottom: 58px;
+    padding: 0;
+    padding-bottom: 40px;
+    background-image: linear-gradient(transparent 80px, #f2f2f2 80px);
     border-bottom: none;
 
     &:nth-child(even) {
@@ -211,12 +209,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    //text-align: center;
 
     & a {
       justify-content: center;
     }
-
   }
 
   .catalog-main__table {
@@ -260,7 +257,7 @@
   .catalog__button {
     width: 249px;
     margin: 0 auto;
-    margin-bottom: 40зч;
+    //margin-bottom: 40px;
     padding: 10px 20px;
     font-size: 16px;
     line-height: 20px;
@@ -270,20 +267,21 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 322px;
     color: @color-black;
-    padding: 81px 20px 23px 20px;
+    padding: 166px 0 40px 0;
     margin: 0 auto;
+    margin-top: 80px;
     text-align: center;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+    border: 1px solid #cdcdcd;
 
     &::before {
       position: absolute;
       content: "";
-      top: 27px;
-      left: 145px;
-      width: 31px;
-      height: 31px;
+      top: 55px;
+      left: 130px;
+      width: 61px;
+      height: 61px;
       background-image: url("../img/icon-plus.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
@@ -291,27 +289,24 @@
   }
 
   .catalog-main__more-show {
-    .oswald-regular();
-    .p-reset();
-    font-size: 16px;
+    width: 175px;
+    margin: 0 auto;
+    font-size: 20px;
     line-height: 20px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
   }
 
   .catalog-main__more-description {
-    .p-reset();
-    font-size: 12px;
+    width: 170px;
+    margin: 0 auto;
+    font-size: 16px;
     line-height: 16px;
-    margin-bottom: 17px;
+    color: @color-gray;
+    margin-bottom: 85px;
   }
 
   .catalog-showall__button {
-    width: 280px;
-    font-size: 16px;
-    line-height: 20px;
-    color: @color-gray;
-    background-color: #f2f2f2;
+    width: 249px;
 
     &:hover,
     &:focus,
@@ -327,39 +322,79 @@
   }
 
   .catalog__info-dealer {
-    background-color: @bg-lightgray;
-  }
-
-  .catalog-infodealer__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 20px;
-    padding-bottom: 25px;
-  }
-}
-
-
-@media (min-width: @desktop-width) {
-  .page-main {
-    width: 1440px;
+    width: 768px;
     margin: 0 auto;
   }
 
+}
+
+
+
+
+@media (min-width: @desktop-width) {
   .catalog {
     width: 1440px;
   }
 
   .catalog__title {
-    font-size: 36px;
-    line-height: 60px;
-    color: @color-black;
-    padding: 17px 22px 28px 22px;
-    margin: 0;
-    border-bottom: 1px solid #d9d9d9;
+    margin-left: 110px;
+    margin-bottom: 84px;
+    border-bottom: none;
   }
 
   .catalog-main {
     width: 1220px;
+  }
+
+  .catalog-main__item {
+    width: 245px;
+    margin-right: 80px;
+    margin-bottom: 63px;
+
+    &:nth-child(even) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  .catalog-main__table {
+    margin-bottom: 30px;
+    width: 170px;
+  }
+  .catalog-main__image {
+    width: 245px; /*временно*/
+    height: 208px;/*временно*/
+    margin-bottom: 37px;
+  }
+
+  .catalog__button {
+    width: 169px;
+  }
+
+  .catalog-main__more {
+    width: 243px;
+    padding: 163px 0 40px 0;
+
+    &::before {
+      left: 93px;
+    }
+  }
+
+  .catalog-main__more-show {
+  }
+
+  .catalog-main__more-description {
+    text-align: center;
+  }
+
+  .catalog-showall__button {
+    width: 169px;
+  }
+
+  .catalog__info-dealer {
+    width: 1440px;
+    border: 1px solid blue; /*временно*/
   }
 }
