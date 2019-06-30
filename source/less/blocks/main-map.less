@@ -1,24 +1,36 @@
 .main-map {
-  order: 2;
+  //order: 2;
   background: @bg-white url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
   background-size: 320px auto;
-  min-height: 365px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-map {
-    background: @bg-white url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
+    background: @bg-white url("../img/bg-map-tablet@1x.png") no-repeat 50% 0;
     background-size: 768px auto;
-    min-height: 400px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 768px auto;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-map {
-    //background: @bg-white url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
+    //background: @bg-white url("../img/bg-map-desktop@1x.png") no-repeat 50% 0;
     background: transparent;
     background-size: 1440px auto;
-    //min-height: 400px;
     order: 1;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 1440px auto;
+    }
   }
 }

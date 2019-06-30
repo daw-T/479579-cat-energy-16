@@ -1,10 +1,15 @@
-var navMain = document.querySelector(".main-nav");
-var navToggle = document.querySelector(".main-nav__toggle");
+if (false) {
+  throw 'not scritp';
+}
 
-var button = navToggle;
-if (button.classList.contains('main-nav--opened')) {
-  button.classList.remove('main-nav--opened');
-  button.classList.add('main-nav--closed');
+var navMain = document.querySelector(".main-nav");
+var button = document.querySelector(".page-header__toggle");
+
+console.log(button);
+
+if (button.classList.contains('page-header__toggle--invisible')) {
+  button.classList.remove('page-header__toggle--invisible');
+  button.classList.add('page-header__toggle--opened');
 }
 if (navMain.classList.contains('main-nav--opened')) {
   navMain.classList.remove('main-nav--opened');
@@ -12,21 +17,22 @@ if (navMain.classList.contains('main-nav--opened')) {
 }
 
 console.log("test");
-navToggle.addEventListener('click', function() {
-  var button  = this;
-  if (button.classList.contains('main-nav--opened')) {
-    button.classList.remove('main-nav--opened');
-    button.classList.add('main-nav--closed');
-  }else {
-    button.classList.add('main-nav--opened');
-    button.classList.remove('main-nav--closed');
+button.addEventListener('click', function () {
+  console.log("click botton");
+  var button = this;
+  if (button.classList.contains('page-header__toggle--closed')) {
+    button.classList.remove('page-header__toggle--closed');
+    button.classList.add('page-header__toggle--opened');
+  } else {
+    button.classList.remove('page-header__toggle--opened');
+    button.classList.add('page-header__toggle--closed');
   }
 
   if (navMain.classList.contains('main-nav--opened')) {
     navMain.classList.remove('main-nav--opened');
     navMain.classList.add('main-nav--closed');
   }else {
-    navMain.classList.add('main-nav--opened');
     navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
   }
 });

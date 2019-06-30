@@ -1,3 +1,8 @@
+.info-dealer {
+  display: flex;
+  flex-direction: column;
+}
+
 .info-dealer__wrapper {
   display: flex;
   justify-content: space-between;
@@ -26,6 +31,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .info-dealer { /*временно*/
+  border: 1px solid blueviolet; /*временно*/
+  }
+
+  .info-dealer picture { /*временно*/
+    min-height: 400px; /*временно*/
+  }
+
   .info-dealer__appeal {
     .oswald-regular();
     width: 170px;
@@ -49,20 +62,26 @@
 }
 
 @media (min-width: @desktop-width) {
-   .info-dealer__wrapper {
+  .info-dealer {
+    position: relative;
+  }
+
+  .info-dealer__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
     width: 404px;
-    margin: 95px 0 104px 110px;
-    padding: 62px 90px 55px 76px;
-    border: 1px solid red; /*временно*/
+    padding: 67px 85px 55px 76px;
+    background-color: @bg-white;
   }
 
   .info-dealer__appeal {
-    width: 155px;
+    width: 160px;
     padding: 0;
   }
 
   .info-dealer__address {
-    width: 157px;
+    width: 153px;
     text-align: left;
     margin: 0;
     padding: 0;

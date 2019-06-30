@@ -78,9 +78,6 @@
   }
 }
 
-
-
-
 @media (min-width: @desktop-width) {
   .site-list {
     width: 935px;
@@ -91,7 +88,41 @@
     .oswald-regular();
     font-size: 20px;
     line-height: 25px;
-    border: 0;
-    //text-shadow: @bg-green 0 0 1px;
   }
-}
+
+   .site-list__item--main a,
+   .site-list__item--main--active a {
+    color: @color-white;
+  }
+
+    .site-list__item--main a[href] {
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:active {
+        color: @color-white;
+      }
+
+      &:active::after {
+        content: "";
+        position: absolute;
+        bottom: 6px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: @bg-white;
+      }
+    }
+
+  .site-list__item--main--active::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 6px;
+      left: 0;
+      height: 2px;
+      background-color: @bg-white;
+    }
+  }

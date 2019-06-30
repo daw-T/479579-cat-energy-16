@@ -10,20 +10,29 @@
   font-size: 16px;
   line-height: 16px;
   margin-right: 23px;
-  padding-top: 22px;
+  padding-top: 30px;
   padding-bottom: 28px;
+}
 
-  &:hover,
-  &:active {
+.copyright:hover,
+.copyright:active {
+  .copyright-link {
     color: #68b738;
+  }
+  .copyright-link-logo path {
+    fill: #68b738;
   }
 }
 
 .copyright-link-logo {
   width: 27px;
   height: 34px;
+  padding: 18px 0;
+}
 
-  &:hover path {
-    fill: #68b738;
+
+@media (min-width: @tablet-width) {
+  .copyright-link {
+    //padding-top: 24px;
   }
 }

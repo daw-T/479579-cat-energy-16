@@ -109,9 +109,9 @@
   .advantages__item {
     position: relative;
     width: 254px;
-    padding: 112px 100px 0 0;
+    padding: 112px 100px 45px 0;
     margin-right: 30px;
-    margin-bottom: 133px;
+    margin-bottom: 88px;
     font-size: 16px;
     line-height: 24px;
 
@@ -145,6 +145,36 @@
       width: 80px;
       height: 80px;
     }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 90px;
+      left: 113px;
+      width: 71px;
+      height: 228px;
+      .oswald-regular();
+      font-size: 281px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &--useful::before {
+      content: "1";
+      left: 120px;
+    }
+
+    &--material::before {
+      content: "2";
+    }
+
+    &--simply::before {
+      content: "3";
+    }
+
+    &--quickly::before {
+      content: "4";
+    }
   }
 }
 
@@ -160,9 +190,9 @@
   .advantages__item {
     position: relative;
     width: 245px;
-    padding: 112px 0 0 0;
+    padding: 112px 0 45px 0;
     margin-right: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 5px;
 
     &:nth-child(even) {
       width: 245px;
